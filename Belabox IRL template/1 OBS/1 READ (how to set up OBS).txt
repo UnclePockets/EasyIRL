@@ -1,0 +1,21 @@
+
+1. Install OBS via exe or from OBS website (https://obsproject.com/download)
+
+2. Make scenes named "LIVE" "LOW" and "BRB" also make PRIVACY, STARTING and ENDING if you want (no commas, keep all capital)
+
+3. make a "belabox" Media source under LIVE/LOW use your OBS source URL from https://cloud.belabox.net under SRT(LA) relays tab
+   EXAMPLE OF SETTINGS https://prnt.sc/EDynNg_VY5Tk
+    -Network buffering: 1MB
+    -Input: OBS source URL from https://cloud.belabox.net under SRT(LA) relays tab
+    -Input format: mpegts
+    -Reconnect delay: 2S
+    -UNCHECK user hardware decoding
+    -CHECK show nothing when playback ends
+    -CHECK close file when inactive
+    -Keep the rest as default
+
+4. Edit them how you see fit (keep LIVE and LOW the same, just add a "low bitrate" text so viewers know its laggy
+
+5. install plugins from OBS plug ins folder if you want (multi stream and blur filter)(just double click file and it installs to OBS)
+
+6. add another Belabox source under PRIVACY(use same settings as step 3), go to filters and add a 55+% blur on it. add text saying its on a privacy scene
